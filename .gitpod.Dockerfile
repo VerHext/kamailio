@@ -2,8 +2,7 @@ FROM gitpod/workspace-mysql
                     
 USER gitpod
 
-RUN apt-cache search flex | grep -i lexical
-RUN sudo apt-get install flex
+RUN sudo apt install flex -y
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
