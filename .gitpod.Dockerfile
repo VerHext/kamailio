@@ -2,6 +2,7 @@ FROM gitpod/workspace-mysql
                     
 USER gitpod
 
+RUN apt-cache search flex | grep -i lexical
 RUN sudo apt-get install flex
 
 # Install custom tools, runtime, etc. using apt-get
