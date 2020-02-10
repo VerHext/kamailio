@@ -2,7 +2,8 @@ FROM gitpod/workspace-mysql
                     
 USER gitpod
 
-RUN sudo apt install flex -y
+RUN sudo apt-get update
+RUN sudo apt-get install flex -y
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
